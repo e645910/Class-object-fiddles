@@ -6,7 +6,7 @@
   //Code here
   var me = {
     name: 'Rick', 
-    age: 58
+    age: 0
   }
 alert(me.name);
 
@@ -84,7 +84,7 @@ console.log(backPack)
   //Code Here
 var me = { 
     name: 'rick',
-    age: 58,
+    age: 0,
     height: 68,
     gender:'male',
     married: 'yes',
@@ -187,14 +187,14 @@ for (var key in user) {
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
-    user.name = 'Rick Wightman',
-    user.email: 'rick.wightman@q.com',
-    user.pwHash: 'U+Ldlngx2BYQk',
-    user.birthday: 06/18/1956,
-    user.username: 'tylermcginnis33',
-    user.age: 0
+    user.name = 'Rick Wightman';
+    user.email = 'rick.wightman@q.com';
+    user.pwHash = 'ou812';
+    user.birthday = 06/18/2014;
+    user.username = 'tylermcginnis33';
+    user.age = 0;
 
-
+    console.log(user);
 
 //NEXT PROBLEM
 
@@ -216,11 +216,14 @@ var user = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
+  user.name = 'Tyler S. McGinnis';
+  user.email = 'tyler.mcginnis@devmounta.in';
 
 //Now call the sayName method that's on the user object which will alert the users email
 
   //Code Here
 
+user.sayName();
 
 
 

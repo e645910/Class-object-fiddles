@@ -170,6 +170,9 @@ for (var key in user) {         //this is best to use
    console.log(user);
   }
 }
+
+//anther way to look at how to loop through an object for falsey values
+
 var falsey = [
   null,
   undefined,
@@ -178,7 +181,7 @@ var falsey = [
   ""
 ];
 for (var key in user) {
-  if (falsey.indexOf(user[key]) !== -1) { //! looks for falsey values
+  if (falsey.indexOf(user[key]) !== -1) { 
       delete user[key];
   }
 }
@@ -242,13 +245,19 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  which logs 'hello' to the console. */
 
   //Code Here
-  var methodCollection.
+  methodCollection.alertHello = function(){
+            alert('hello');
+          }
 
+methodCollection.logHello = function() {
+            console.log('hello')
+}
 //Now call your alertHello and logHello methods.
 
   //Code Here
 
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 //NEXT PROBLEM

@@ -296,14 +296,24 @@ array with those four objects. After that console.log the length of the Array an
 sure that it's equal to 4. */
 
   //Code Here
+devMountainEmployees.push(tyler);
+devMountainEmployees.push(cahlan);
+devMountainEmployees.push(ryan);
+devMountainEmployees.push(colt);
+//console.log(devMountainEmployees);
+
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absense to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
   //Code Here
-
-
-
+for(var =i; i < devMountainEmployees.length; i++) {
+  if (devMountainEmployees[i] === "cahlan") {
+    devMountainEmployees.splice[i, 1];
+    break;
+  }
+}
+console.log(devMountainEmployees);
 
 //NEXT PROBLEM
 
